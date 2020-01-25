@@ -5,6 +5,9 @@
     position: relative;
     margin-bottom: 1rem;
 
+    // SOLUTION FOR BUG 5
+    height: 100%;
+
     .card-img{
         height: 250px;
 

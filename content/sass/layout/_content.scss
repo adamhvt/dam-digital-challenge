@@ -1,7 +1,35 @@
-.content{
-    display: flex;
+.content {
+  display: flex;
 
-    .main-content{
-        flex: 1;
+  .main-content {
+    flex: 1;
+
+    .cards-list {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+
+      li {
+        margin-bottom: 1rem;
+        list-style: none;
+        width: 100%;
+      }
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+          width: 48%;
+        }
+      }
+
+      @media (min-width: 992px) {
+        li {
+          width: 32%;
+        }
+      }
     }
+  }
 }
